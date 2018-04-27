@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:text="How well do you know water?"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="24dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4E4B4F" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:ems="8"
+            android:hint="Name"
+            android:inputType="textCapWords"
+            android:paddingTop="16dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="Questionnaire"
+            android:textAllCaps="true"
+            android:textStyle="italic" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4E4B4F" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:text="Roughly what percentage of Earth’s water is estimated to be freshwater?" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/question_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.5%" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15%" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25%" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="40%" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4E4B4F"
+                android:paddingTop="8dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="What is the chemical formula for water? Type your response in the space below." />
+
+            <EditText
+                android:id="@+id/h2o"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter response here" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4E4B4F" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingTop="8dp"
+                android:text="True or False. The human body can go longer without water than without food." />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/question_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4E4B4F" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="Check all that apply. Which of the following are signs of dehydration?" />
+
+            <CheckBox
+                android:id="@+id/q4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Increased thirst" />
+
+            <CheckBox
+                android:id="@+id/q4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dry mouth" />
+
+            <CheckBox
+                android:id="@+id/q4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiredness or sleepiness" />
+
+            <CheckBox
+                android:id="@+id/q4_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decreased urine output" />
+
+            <CheckBox
+                android:id="@+id/q4_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urine more yellow than normal" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4E4B4F"
+            android:paddingBottom="16dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="printScore"
+            android:text="Submit" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
